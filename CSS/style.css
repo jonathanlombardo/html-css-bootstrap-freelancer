@@ -9,7 +9,9 @@
   --li-margin: 1em; /* margini lista FontAwesome */
   --li-width: 1.5em; /* markerwidth lista FontAwesome */
 
-  --main-color: rgba(255, 0, 0, 0.236);
+  --bs-primary-rgb: 26, 188, 156;
+  --bs-secondary-rgb: 44, 62, 80;
+  --bs-info-rgb: 58, 84, 109;
 }
 
 /* -- DEBUG */
@@ -28,8 +30,21 @@
   /* min-height: 50px; */
 }
 
-.db i::after {
+.db i::after,
+.db-content i::after {
   content: "ℹ️";
 }
 
 /* ---------------------------------------- */
+
+.navbar-toggler-icon {
+  filter: invert(1);
+}
+
+.navbar-toggler {
+  border-color: white;
+}
+
+#downloadbutton {
+  width: fit-content;
+}
