@@ -45,6 +45,6 @@
   border-color: white;
 }
 
-#downloadbutton {
-  width: fit-content;
+section:nth-of-type(odd) {
+  background-color: rgb(var(--bs-primary-rgb));
 }
