@@ -44,3 +44,12 @@
 section:nth-of-type(odd) {
   background-color: rgb(var(--bs-primary-rgb));
 }
+
+.social-icon {
+  width: 60px;
+  height: 60px;
+}
+
+.social-icon i {
+  line-height: 60px;
+}

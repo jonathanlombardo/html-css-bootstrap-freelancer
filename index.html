@@ -27,7 +27,7 @@
   <body>
     <!-- HEADER navbar -->
     <header>
-      <nav class="navbar navbar-expand-sm py-3 bg-secondary fw-bold" data-bs-theme="dark">
+      <nav class="navbar navbar-expand-md py-3 bg-secondary fw-bold" data-bs-theme="dark">
         <div class="container-md py-2">
           <!-- NAVBAR brand -->
           <a class="navbar-brand me-0 text-uppercase" href="#">start bootstrap</a>
@@ -147,90 +147,84 @@
 
         <!-- paragraph -->
         <div class="row justify-content-center">
-          <div class="col-10 col-md-5">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam eum esse enim asperiores minus obcaecati itaque perferendis iure accusamus laudantium iste suscipit eaque ad, debitis ab temporibus hic non quas.</p>
+          <div class="col-10 col-md-5 py-3">
+            <p class="mb-0 fs-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam eum esse enim asperiores minus obcaecati itaque perferendis iure accusamus laudantium iste suscipit eaque ad, debitis ab temporibus hic non quas.</p>
           </div>
-          <div class="col-10 col-md-5">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, voluptates? Perspiciatis, animi possimus. Ab doloribus minus illum perspiciatis aliquam quia optio, dignissimos ipsam numquam unde facilis atque sunt minima velit.</p>
+          <div class="col-10 col-md-5 py-3">
+            <p class="mb-0 fs-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, voluptates? Perspiciatis, animi possimus. Ab doloribus minus illum perspiciatis aliquam quia optio, dignissimos ipsam numquam unde facilis atque sunt minima velit.</p>
           </div>
         </div>
 
         <!-- download button -->
-        <div id="downloadbutton" class="text-center">
+        <div id="downloadbutton" class="text-center py-3">
           <a href="#" class="btn active text-white btn-lg text-capitalize"><i class="fa-solid fa-download"></i> download</a>
         </div>
       </div>
     </section>
 
     <!-- CONTACT -->
-    <section id="contact">
+    <section id="contact" class="py-3 py-md-4 text-secondary py-3 py-md-4">
       <div class="container-md">
         <!-- title -->
-        <h2 class="h4 text-uppercase text-center">contact me</h2>
+        <h2 class="display-6 fw-bold text-uppercase text-center py-3">contact me</h2>
 
         <!-- star divider -->
         <div class="star-wrapper row justify-content-center align-items-center text-center">
-          <div class="col-3 border border-2 border-secondary"></div>
-          <div class="col-1">
-            <i class="fa-solid fa-star"></i>
+          <div class="col-2 col-md-3 border border-2 border-secondary"></div>
+          <div class="col-2">
+            <i class="fa-solid fa-star fs-2"></i>
           </div>
-          <div class="col-3 border border-2 border-secondary"></div>
+          <div class="col-2 col-md-3 border border-2 border-secondary"></div>
         </div>
 
         <!-- inputs -->
-        <div class="row flex-column align-items-center gy-3">
-          <div class="col-10">
-            <input type="text" placeholder="Name" class="form-control form-control-lg fs-2 border-0 border-bottom rounded-0" />
+        <form action="https://learning.tizianonicolai.com/request-catcher/" class="py-3" method="post" target="_blank">
+          <div class="row flex-column align-items-center gy-3">
+            <div class="col-10">
+              <input type="text" placeholder="Name" name="name" id="name" required class="form-control form-control-lg fs-2 border-0 border-bottom rounded-0" />
+            </div>
+            <div class="col-10">
+              <input type="email" placeholder="Email Address" name="mail" id="mail" required class="form-control form-control-lg fs-2 border-0 border-bottom rounded-0" />
+            </div>
+            <div class="col-10">
+              <input type="tel" placeholder="Phone Number" name="tel" id="tel" required class="form-control form-control-lg fs-2 border-0 border-bottom rounded-0" />
+            </div>
+            <div class="col-10">
+              <textarea placeholder="Message" name="msg" id="msg" required class="form-control form-control-lg fs-2 border-0 border-bottom rounded-0" cols="30" rows="7"></textarea>
+            </div>
+            <div class="col-10">
+              <button class="btn bg-primary btn-lg text-white">Send</button>
+              <input type="reset" class="btn btn-outline border-primary text-primary btn-lg" value="Svuota" />
+            </div>
           </div>
-          <div class="col-10">
-            <input type="email" placeholder="Email Address" class="form-control form-control-lg fs-2 border-0 border-bottom rounded-0" />
-          </div>
-          <div class="col-10">
-            <input type="tel" placeholder="Phone Number" class="form-control form-control-lg fs-2 border-0 border-bottom rounded-0" />
-          </div>
-          <div class="col-10">
-            <textarea placeholder="Message" class="form-control form-control-lg fs-2 border-0 border-bottom rounded-0" cols="30" rows="7"></textarea>
-          </div>
-          <div class="col-10">
-            <button class="btn bg-primary btn-lg text-white">Send</button>
-          </div>
-        </div>
+        </form>
       </div>
     </section>
 
     <footer>
       <!-- footer top -->
-      <div id="footer-top" class="bg-info text-white">
+      <div id="footer-top" class="bg-info text-white fs-5 py-3 py-md-4">
         <div class="container-md">
-          <div class="row align-items-center text-center">
+          <div class="row g-4 text-center">
             <!-- location -->
-            <div class="col-md-4">
+            <div class="col-md">
               <div class="text-uppercase">LOCATION</div>
               <div class="text-capitalize">2215 John Daniel Drive Clark, MO 54243</div>
             </div>
 
             <!-- social -->
-            <div class="col-md-4">
-              <div class="text-uppercase">around the web</div>
-
-              <div class="row justify-content-center">
-                <div class="col-2">
-                  <div class="ratio ratio-1x1 border rounded-circle border-color-white"><i class="d-flex justify-content-center align-items-center fa-brands fa-facebook-f"></i></div>
-                </div>
-                <div class="col-2">
-                  <div class="ratio ratio-1x1 border rounded-circle border-color-white"><i class="d-flex justify-content-center align-items-center fa-brands fa-google-plus-g"></i></div>
-                </div>
-                <div class="col-2">
-                  <div class="ratio ratio-1x1 border rounded-circle border-color-white"><i class="d-flex justify-content-center align-items-center fa-brands fa-x-twitter"></i></div>
-                </div>
-                <div class="col-2">
-                  <div class="ratio ratio-1x1 border rounded-circle border-color-white"><i class="d-flex justify-content-center align-items-center fa-brands fa-linkedin-in"></i></div>
-                </div>
+            <div class="col-md">
+              <div class="text-uppercase pb-2">around the web</div>
+              <div class="d-flex justify-content-center">
+                <a href="#" class="social-icon text-white flex-shrink-0 mx-2 rounded-circle border border-color-white"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" class="social-icon text-white flex-shrink-0 mx-2 rounded-circle border border-color-white"><i class="fa-brands fa-google-plus-g"></i></a>
+                <a href="#" class="social-icon text-white flex-shrink-0 mx-2 rounded-circle border border-color-white"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#" class="social-icon text-white flex-shrink-0 mx-2 rounded-circle border border-color-white"><i class="fa-brands fa-linkedin-in"></i></a>
               </div>
             </div>
 
             <!-- about -->
-            <div class="col-md-4">
+            <div class="col-md">
               <div class="text-uppercase">about</div>
               <div>Freelance is a free to use, open source Bootstrap theme created by <a href="#" class="text-primary text-decoration-none">Start Bootstrap</a>.</div>
             </div>
@@ -239,7 +233,7 @@
       </div>
 
       <!-- footer-bottom -->
-      <div id="footer-copyright" class="bg-secondary text-white text-center">
+      <div id="footer-copyright" class="bg-secondary text-white text-center py-3 py-md-4">
         <div class="container-md">footer-copyright</div>
       </div>
     </footer>
