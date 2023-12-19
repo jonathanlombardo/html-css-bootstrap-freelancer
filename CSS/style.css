@@ -37,12 +37,8 @@
 
 /* ---------------------------------------- */
 
-.navbar-toggler-icon {
-  filter: invert(1);
-}
-
-.navbar-toggler {
-  border-color: white;
+#hero figure {
+  width: 250px;
 }
 
 section:nth-of-type(odd) {
